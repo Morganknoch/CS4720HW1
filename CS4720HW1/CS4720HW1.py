@@ -3,6 +3,7 @@
 
 import scipy.io
 import numpy as np
+import math
 
 # import the data from .mat file
 data = scipy.io.loadmat("data_class4.mat")
@@ -75,8 +76,18 @@ fourthClassCov = np.cov(fourthClass)
 
 #2 find the eigenvectors and eigenvalues for each class
 
+# solve the equation Ev=yv, where y eigenvalues and x
 
+def findEigenvectorsAndEigenValues(cov):
+    # ax^2 + bx + c
+    b = (-cov[0][0])-(cov[1][1])
+    c = (cov[0][0] * cov[1][1]) - (cov[1][0] * cov[0][1])
 
+    # produce the eigenvalues
+    x1 = (-b + math.sqrt(b**2 - (4 * 1 * c)))/2
+    x2 = (-b - math.sqrt(b**2 - (4 * 1 * c)))/2
+
+    # solve for eigenvectors
 
 
 
