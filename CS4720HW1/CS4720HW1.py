@@ -154,9 +154,42 @@ for i in fourthClass:
     plt.scatter(i[0],i[1], c='g')
 
 # plot eigenvectors
+firstClassV1[0] = (firstClassV1[0]+firstClassMean[0])
+firstClassV1[1] = (firstClassV1[1]+firstClassMean[1])
+plt.quiver(firstClassMean[0], firstClassMean[1], firstClassV1[0], firstClassV1[1], angles='xy', scale_units='xy', scale=1)
+
+firstClassV2[0] = (firstClassV2[0]+firstClassMean[0])
+firstClassV2[1] = (firstClassV2[1]+firstClassMean[1])
+plt.quiver(firstClassMean[0], firstClassMean[1], firstClassV2[0], firstClassV2[1], angles='xy', scale_units='xy', scale=1)
 
 
+secondClassV1[0] = (secondClassV1[0]+secondClassMean[0])
+secondClassV1[1] = (secondClassV1[1]+secondClassMean[1])
+plt.quiver(secondClassMean[0], secondClassMean[1], secondClassV1[0], secondClassV1[1], angles='xy', scale_units='xy', scale=1)
 
+secondClassV2[0] = (secondClassV2[0]+secondClassMean[0])
+secondClassV2[1] = (secondClassV2[1]+secondClassMean[1])
+plt.quiver(secondClassMean[0], secondClassMean[1], secondClassV2[0], secondClassV2[1], angles='xy', scale_units='xy', scale=1)
+
+
+thirdClassV1[0] = (thirdClassV1[0]+thirdClassMean[0])
+thirdClassV1[1] = (thirdClassV1[1]+thirdClassMean[1])
+plt.quiver(thirdClassMean[0], thirdClassMean[1], thirdClassV1[0], thirdClassV1[1], angles='xy', scale_units='xy', scale=1)
+
+thirdClassV2[0] = (thirdClassV2[0]+thirdClassMean[0])
+thirdClassV2[1] = (thirdClassV2[1]+thirdClassMean[1])
+plt.quiver(thirdClassMean[0], thirdClassMean[1], thirdClassV2[0], thirdClassV2[1], angles='xy', scale_units='xy', scale=1)
+
+fourthClassV1[0] = (fourthClassV1[0]+fourthClassMean[0])
+fourthClassV1[1] = (fourthClassV1[1]+fourthClassMean[1])
+plt.quiver(fourthClassMean[0], fourthClassMean[1], fourthClassV1[0], fourthClassV1[1], angles='xy', scale_units='xy', scale=1)
+
+fourthClassV2[0] = (fourthClassV2[0]+fourthClassMean[0])
+fourthClassV2[1] = (fourthClassV2[1]+fourthClassMean[1])
+plt.quiver(fourthClassMean[0], fourthClassMean[1], fourthClassV2[0], fourthClassV2[1], angles='xy', scale_units='xy', scale=1)
+
+plt.xlim(-5, 20)
+plt.ylim(-10, 10)
 
 plt.show()
 
